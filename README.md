@@ -12,7 +12,7 @@ LEGACY POC - Controle de operações bancárias
 
 Author: Time Fusion
 
-* Implementaçãoo Individual
+* Implementação Individual
  Lucas  Bergamo
 
 
