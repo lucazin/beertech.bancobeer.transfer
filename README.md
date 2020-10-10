@@ -10,11 +10,12 @@ LEGACY POC - Controle de operações bancárias
 - JPA
 - RabbitMQ
 
-
 Author: Time Fusion
-Patricia Crevelário Lisboa  
-Lucas Bergamo  
-Maria Luísa Souza Matos  
-Sabrina Jodely Rufo  
+
+* Implementaçãoo Individual
+ Lucas  Bergamo
+
+
+
 
 
