@@ -9,6 +9,8 @@ LEGACY POC - Controle de operações bancárias
 - MYSQL
 - JPA
 - RabbitMQ
+- JWT
+- Swagger APIDOC
 
 Author: Time Fusion
 
