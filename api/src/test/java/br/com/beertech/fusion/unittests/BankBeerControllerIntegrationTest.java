@@ -25,24 +25,36 @@ public class BankBeerControllerIntegrationTest {
 	@LocalServerPort
     private int port =8081;
 	
-	private String getRootUrl() {
+	private String getRootUrlOperation() {
         return "http://localhost:" + port + "/bankbeer";
+    }
+    private String getRootUrlTransfer() {
+        return "http://localhost:" + port + "//bankbeertransfer";
     }
 	
 	@Test
     public void testGetAllTransacoes() {
     HttpHeaders headers = new HttpHeaders();
        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-       ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/transacoes/",
+       ResponseEntity<String> response = restTemplate.exchange(getRootUrlOperation() + "/transacoes/",
        HttpMethod.GET, entity, String.class);  
        assertNotNull(response.getBody());
    }
+
+    @Test
+    public void testGetAllTransfer() {
+        HttpHeaders headers = new HttpHeaders();
+        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
+        ResponseEntity<String> response = restTemplate.exchange(getRootUrlTransfer() + "/list/",
+                HttpMethod.GET, entity, String.class);
+        assertNotNull(response.getBody());
+    }
 	
 	@Test
     public void testGetSaldo() {
     HttpHeaders headers = new HttpHeaders();
        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-       ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/saldo/",
+       ResponseEntity<String> response = restTemplate.exchange(getRootUrlOperation() + "/saldo/",
        HttpMethod.GET, entity, String.class);  
        assertNotNull(response.getBody());
    }
