@@ -1,6 +1,4 @@
-# BEERTECH_FUSION
-
-
+# BeerTech LegacyPoc
 
 LEGACY POC - Controle de operações bancárias
 
@@ -11,8 +9,6 @@ LEGACY POC - Controle de operações bancárias
 - RabbitMQ
 - JWT
 - Swagger APIDOC
-
-Author: Time Fusion
 
 * Implementação Individual
  Lucas  Bergamo
